@@ -7,17 +7,18 @@ Aşağıda verilen YAML dosyasındaki yapılandırmaların anlamını açıklaya
 
 ```yml
 spring.cloud.stream:
-function:
-definition: producer;processor;consumer
-bindings:
-producer-out-0:
-destination: numbers
-processor-in-0:
-destination: numbers
-processor-out-0:
-destination: squares
-consumer-in-0:
-destination: squares
+   function:
+      definition: producer;processor;consumer
+   bindings:
+      producer-out-0:
+         destination: numbers
+      processor-in-0:
+         destination: numbers
+      processor-out-0:
+         destination: squares
+      consumer-in-0:
+         destination: squares
+
 ```
 
  - `spring.cloud.stream`: Spring Cloud Stream framework'ü için yapılandırma başlığını belirtir.
